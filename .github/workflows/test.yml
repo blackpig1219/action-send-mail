@@ -48,9 +48,9 @@ jobs:
         with:
           server_address: ${{secrets.ADDRESS}}
           server_port: 465
-          username: ${{secrets.USERNAME}}
+          username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.PASSWORD}}
-          subject: ${{matrix.subject}}
+          subject: ${{matrix.MAIL_PASSWORD}}
           body: ${{matrix.body}}
           html_body: ${{matrix.html_body}}
           to: ${{github.event.pusher.email}}
